@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO : Titre & description -->
+    <title>Fukkatsu — Restauration complète d'une Mitsubishi Eclipse GS 1996</title>
+    <meta name="description" content="Fukkatsu (復活, « résurrection ») : le journal de la restauration complète d'une Mitsubishi Eclipse GS de 1996 rongée par la rouille. Suivez chaque étape, de la carrosserie au moteur, jusqu'à la renaissance." />
+    <meta name="keywords" content="Fukkatsu, Mitsubishi Eclipse, Eclipse GS, 1996, restauration automobile, rouille, carrosserie, JDM, projet voiture, restomod, 2G Eclipse" />
+    <meta name="author" content="Projet Fukkatsu" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0d0d10" />
+    <link rel="canonical" href="https://fukkatsu.example.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Fukkatsu" />
+    <meta property="og:title" content="Fukkatsu — Renaissance d'une Mitsubishi Eclipse GS 1996" />
+    <meta property="og:description" content="Le journal de bord d'une restauration complète : transformer une Eclipse GS 1996 rouillée en machine vivante." />
+    <meta property="og:url" content="https://fukkatsu.example.com/" />
+    <meta property="og:image" content="https://fukkatsu.example.com/assets/og-image.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fukkatsu — Renaissance d'une Mitsubishi Eclipse GS 1996" />
+    <meta name="twitter:description" content="Le journal de bord d'une restauration complète d'une Eclipse GS 1996 rouillée." />
+    <meta name="twitter:image" content="https://fukkatsu.example.com/assets/og-image.jpg" />
+
+    <!-- Favicon (SVG inline encodé) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0d10'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23e23636' font-family='sans-serif' font-weight='bold'%3E復%3C/text%3E%3C/svg%3E" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Données structurées JSON-LD : référencement riche -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "name": "Fukkatsu",
+      "alternateName": "復活",
+      "description": "Restauration complète d'une Mitsubishi Eclipse GS de 1996 rongée par la rouille, documentée étape par étape.",
+      "inLanguage": "fr",
+      "keywords": "Mitsubishi Eclipse GS, restauration, 1996, JDM",
+      "about": {
+        "@type": "Car",
+        "name": "Mitsubishi Eclipse GS",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Mitsubishi Motors"
+        },
+        "modelDate": "1996",
+        "bodyType": "Coupé",
+        "fuelType": "Essence"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Lien d'accessibilité -->
+    <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+    <!-- ==================== EN-TÊTE / NAVIGATION ==================== -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <a href="#/" class="brand" aria-label="Accueil Fukkatsu">
+                <span class="brand-kanji" aria-hidden="true">復活</span>
+                <span class="brand-text">Fukkatsu</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navigation principale">
+                <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#/" data-route="/">Accueil</a></li>
+                    <li><a href="#/projet" data-route="/projet">Le projet</a></li>
+                    <li><a href="#/voiture" data-route="/voiture">La voiture</a></li>
+                    <li><a href="#/restauration" data-route="/restauration">Restauration</a></li>
+                    <li><a href="#/galerie" data-route="/galerie">Galerie</a></li>
+                    <li><a href="#/journal" data-route="/journal">Journal</a></li>
+                    <li><a href="#/contact" data-route="/contact" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ==================== CONTENU PRINCIPAL (SPA) ==================== -->
+    <main id="main">
+
+        <!-- ---------- VUE : ACCUEIL ---------- -->
+        <section class="view" id="view-/" data-view="/">
+            <div class="hero">
+                <div class="hero-bg" aria-hidden="true"></div>
+                <div class="container hero-content">
+                    <p class="hero-eyebrow">復活 · Projet de restauration</p>
+                    <h1 class="hero-title">Fukkatsu</h1>
+                    <p class="hero-subtitle">La renaissance d'une <strong>Mitsubishi Eclipse GS&nbsp;1996</strong>, de l'épave rouillée à la machine vivante.</p>
+                    <div class="hero-actions">
+                        <a href="#/restauration" class="btn btn-primary">Suivre la restauration</a>
+                        <a href="#/projet" class="btn btn-ghost">Découvrir le projet</a>
+                    </div>
+                    <dl class="hero-stats">
+                        <div><dt>1996</dt><dd>Année du modèle</dd></div>
+                        <div><dt>2G</dt><dd>Génération Eclipse</dd></div>
+                        <div><dt>100%</dt><dd>Restauration complète</dd></div>
+                    </dl>
+                </div>
+                <a href="#/projet" class="scroll-cue" aria-label="Descendre">▾</a>
+            </div>
+
+            <div class="container section">
+                <div class="section-head reveal">
+                    <span class="section-tag">L'esprit du projet</span>
+                    <h2>Redonner vie à une légende oubliée</h2>
+                </div>
+                <div class="lead-grid">
+                    <p class="reveal">« Fukkatsu » signifie <em>résurrection</em> en japonais. C'est exactement la mission&nbsp;: arracher à la rouille une Eclipse GS de 1996 et lui rendre la fougue de ses premiers tours de roue.</p>
+                    <p class="reveal">Ce site documente chaque étape — démontage, traitement de la corrosion, carrosserie, mécanique, peinture et remontage — pour partager un projet de passion, transparent et complet.</p>
+                </div>
+                <div class="feature-cards">
+                    <article class="card reveal">
+                        <span class="card-icon" aria-hidden="true">🔧</span>
+                        <h3>Documenté</h3>
+                        <p>Chaque intervention est consignée, photographiée et expliquée, étape par étape.</p>
+                    </article>
+                    <article class="card reveal">
+                        <span class="card-icon" aria-hidden="true">🛡️</span>
+                        <h3>Sans compromis</h3>
+                        <p>Traitement complet de la rouille et remise à neuf des pièces d'origine ou améliorées.</p>
+                    </article>
+                    <article class="card reveal">
+                        <span class="card-icon" aria-hidden="true">🏁</span>
+                        <h3>Pour rouler</h3>
+                        <p>Une restauration vivante&nbsp;: l'objectif final est de reprendre la route, pas le musée.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- VUE : LE PROJET ---------- -->
+        <section class="view" id="view-/projet" data-view="/projet" hidden>
+            <div class="page-hero">
+                <div class="container">
+                    <span class="section-tag">Le projet</span>
+                    <h1>L'histoire de Fukkatsu</h1>
+                    <p class="page-lead">D'un tas de rouille découvert au fond d'un garage à un coupé sport prêt à reprendre la route.</p>
+                </div>
+            </div>
+            <div class="container section">
+                <div class="prose reveal">
+                    <h2>Le point de départ</h2>
+                    <p>Acquise dans un état déplorable, cette Mitsubishi Eclipse GS de 1996 portait les stigmates de près de trois décennies d'oubli&nbsp;: bas de caisse percés, planchers attaqués, mécanique fatiguée et intérieur défraîchi. Beaucoup l'auraient envoyée à la casse. Nous y avons vu un projet.</p>
+
+                    <h2>La philosophie</h2>
+                    <p>Restaurer plutôt que remplacer quand c'est possible, améliorer là où c'est pertinent, et tout documenter. L'objectif n'est pas une voiture de concours figée, mais un coupé fiable, sain et agréable à conduire au quotidien.</p>
+
+                    <h2>Les grands chantiers</h2>
+                    <ul class="check-list">
+                        <li>Démontage intégral et inventaire des pièces</li>
+                        <li>Traitement et réparation de la corrosion</li>
+                        <li>Réfection de la carrosserie et mise en peinture</li>
+                        <li>Révision complète de la mécanique et des trains roulants</li>
+                        <li>Remise à neuf de l'habitacle</li>
+                        <li>Remontage, réglages et homologation</li>
+                    </ul>
+                </div>
+
+                <aside class="callout reveal">
+                    <h3>Pourquoi l'Eclipse GS&nbsp;?</h3>
+                    <p>La deuxième génération (2G, 1995-1999) de la Mitsubishi Eclipse est une icône des années 90, à la silhouette intemporelle. La version GS offre un excellent compromis entre légèreté, plaisir et potentiel de préparation.</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- ---------- VUE : LA VOITURE ---------- -->
+        <section class="view" id="view-/voiture" data-view="/voiture" hidden>
+            <div class="page-hero">
+                <div class="container">
+                    <span class="section-tag">La voiture</span>
+                    <h1>Mitsubishi Eclipse GS — 1996</h1>
+                    <p class="page-lead">Fiche technique du modèle de départ (2ᵉ génération, plateforme partagée Mitsubishi/Chrysler).</p>
+                </div>
+            </div>
+            <div class="container section">
+                <div class="specs-grid">
+                    <div class="spec reveal"><span class="spec-label">Constructeur</span><span class="spec-value">Mitsubishi Motors</span></div>
+                    <div class="spec reveal"><span class="spec-label">Modèle</span><span class="spec-value">Eclipse GS</span></div>
+                    <div class="spec reveal"><span class="spec-label">Année</span><span class="spec-value">1996</span></div>
+                    <div class="spec reveal"><span class="spec-label">Génération</span><span class="spec-value">2G (1995–1999)</span></div>
+                    <div class="spec reveal"><span class="spec-label">Carrosserie</span><span class="spec-value">Coupé 3 portes</span></div>
+                    <div class="spec reveal"><span class="spec-label">Moteur</span><span class="spec-value">4 cylindres 2.0L (420A / 4G63 selon version)</span></div>
+                    <div class="spec reveal"><span class="spec-label">Transmission</span><span class="spec-value">Manuelle / Traction</span></div>
+                    <div class="spec reveal"><span class="spec-label">Places</span><span class="spec-value">2+2</span></div>
+                </div>
+
+                <div class="prose reveal">
+                    <h2>Un design intemporel</h2>
+                    <p>Lignes fluides, phares escamotables disparus au profit d'optiques fines, capot plongeant&nbsp;: l'Eclipse 2G incarne le style coupé sport japonais de la fin des années 90. Une base parfaite pour une restauration soignée.</p>
+                    <p class="note">⚠️ Les caractéristiques exactes (motorisation, options) seront affinées au fur et à mesure de l'inventaire du véhicule.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- VUE : RESTAURATION (TIMELINE) ---------- -->
+        <section class="view" id="view-/restauration" data-view="/restauration" hidden>
+            <div class="page-hero">
+                <div class="container">
+                    <span class="section-tag">Restauration</span>
+                    <h1>Les étapes de la renaissance</h1>
+                    <p class="page-lead">Avancement global du chantier et détail des phases de restauration.</p>
+                </div>
+            </div>
+            <div class="container section">
+                <div class="progress-block reveal">
+                    <div class="progress-head">
+                        <span>Avancement global</span>
+                        <span class="progress-pct">35%</span>
+                    </div>
+                    <div class="progress-bar"><span style="width:35%"></span></div>
+                </div>
+
+                <ol class="timeline">
+                    <li class="timeline-item is-done reveal">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-status">Terminé</span>
+                            <h3>1. Acquisition &amp; diagnostic</h3>
+                            <p>Récupération du véhicule, inventaire complet, identification des points de corrosion et des pièces manquantes.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item is-done reveal">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-status">Terminé</span>
+                            <h3>2. Démontage intégral</h3>
+                            <p>Dépose de l'intérieur, des trains roulants, du moteur et des éléments de carrosserie. Étiquetage et stockage.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item is-active reveal">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-status">En cours</span>
+                            <h3>3. Traitement de la rouille</h3>
+                            <p>Décapage, découpe des zones percées, soudure de tôles neuves, traitement anticorrosion en profondeur.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-status">À venir</span>
+                            <h3>4. Carrosserie &amp; peinture</h3>
+                            <p>Redressage, apprêt, ponçage, mise en peinture et vernis dans la teinte d'origine.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-status">À venir</span>
+                            <h3>5. Mécanique &amp; trains roulants</h3>
+                            <p>Réfection moteur, embrayage, freinage, suspension, direction et révision complète.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item reveal">
+                        <div class="timeline-marker" aria-hidden="true"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-status">À venir</span>
+                            <h3>6. Habitacle &amp; remontage</h3>
+                            <p>Réfection de l'intérieur, remontage complet, réglages, contrôle technique et premiers tours de roue.</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ---------- VUE : GALERIE ---------- -->
+        <section class="view" id="view-/galerie" data-view="/galerie" hidden>
+            <div class="page-hero">
+                <div class="container">
+                    <span class="section-tag">Galerie</span>
+                    <h1>En images</h1>
+                    <p class="page-lead">Avant / pendant / après — la transformation au fil du temps. (Visuels de démonstration à remplacer par vos photos.)</p>
+                </div>
+            </div>
+            <div class="container section">
+                <div class="gallery" id="gallery">
+                    <!-- Les vignettes sont générées par JS pour faciliter le remplacement -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- VUE : JOURNAL ---------- -->
+        <section class="view" id="view-/journal" data-view="/journal" hidden>
+            <div class="page-hero">
+                <div class="container">
+                    <span class="section-tag">Journal de bord</span>
+                    <h1>Dernières avancées</h1>
+                    <p class="page-lead">Les billets du chantier, du plus récent au plus ancien.</p>
+                </div>
+            </div>
+            <div class="container section">
+                <div class="posts">
+                    <article class="post reveal">
+                        <time datetime="2026-06-15" class="post-date">15 juin 2026</time>
+                        <h2>Découpe des bas de caisse</h2>
+                        <p>Les zones les plus attaquées par la corrosion ont été découpées. Préparation des gabarits pour la soudure des tôles neuves. La structure reste saine&nbsp;: bonne nouvelle pour la suite.</p>
+                        <a href="#/restauration" class="post-link">Voir l'étape →</a>
+                    </article>
+                    <article class="post reveal">
+                        <time datetime="2026-05-02" class="post-date">2 mai 2026</time>
+                        <h2>Démontage du moteur</h2>
+                        <p>Le bloc a été déposé pour inspection. Quelques surprises mais rien de rédhibitoire. Inventaire des pièces à remplacer en cours.</p>
+                        <a href="#/restauration" class="post-link">Voir l'étape →</a>
+                    </article>
+                    <article class="post reveal">
+                        <time datetime="2026-03-20" class="post-date">20 mars 2026</time>
+                        <h2>Première mise sur chandelles</h2>
+                        <p>Diagnostic complet du dessous de caisse. Cartographie de la rouille réalisée. Le projet Fukkatsu démarre officiellement.</p>
+                        <a href="#/projet" class="post-link">Lire le projet →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------- VUE : CONTACT ---------- -->
+        <section class="view" id="view-/contact" data-view="/contact" hidden>
+            <div class="page-hero">
+                <div class="container">
+                    <span class="section-tag">Contact</span>
+                    <h1>Suivre &amp; échanger</h1>
+                    <p class="page-lead">Une question, un conseil, une pièce à proposer&nbsp;? Écrivez-nous.</p>
+                </div>
+            </div>
+            <div class="container section contact-grid">
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="field">
+                        <label for="cf-name">Nom</label>
+                        <input type="text" id="cf-name" name="name" required autocomplete="name" />
+                    </div>
+                    <div class="field">
+                        <label for="cf-email">E-mail</label>
+                        <input type="email" id="cf-email" name="email" required autocomplete="email" />
+                    </div>
+                    <div class="field">
+                        <label for="cf-message">Message</label>
+                        <textarea id="cf-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                    <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+                </form>
+                <aside class="contact-aside reveal">
+                    <h3>Restons connectés</h3>
+                    <p>Le projet Fukkatsu se partage aussi sur les réseaux. Suivez l'avancée du chantier en temps réel.</p>
+                    <ul class="social-list">
+                        <li><a href="#/" rel="noopener">Instagram</a></li>
+                        <li><a href="#/" rel="noopener">YouTube</a></li>
+                        <li><a href="#/" rel="noopener">TikTok</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== PIED DE PAGE ==================== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-kanji" aria-hidden="true">復活</span>
+                <p>Fukkatsu — la renaissance d'une Mitsubishi Eclipse GS&nbsp;1996.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Navigation du pied de page">
+                <a href="#/projet">Le projet</a>
+                <a href="#/voiture">La voiture</a>
+                <a href="#/restauration">Restauration</a>
+                <a href="#/galerie">Galerie</a>
+                <a href="#/journal">Journal</a>
+                <a href="#/contact">Contact</a>
+            </nav>
+            <p class="footer-copy">© <span id="year"></span> Projet Fukkatsu. Projet personnel non affilié à Mitsubishi Motors.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
